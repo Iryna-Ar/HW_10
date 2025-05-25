@@ -1,0 +1,27 @@
+    1  git config --global user.name Iryna Arkhytko
+    2  git config --global user.email arhit.ki@gmail.com
+    3  git clone https://github.com/Iryna-Ar/HW_10.git
+    4  cd HW_10
+    5  touch text_ignore.txt
+    6  nano .gitignore
+    7  git status 
+    8  git add .
+    9  git commit -m"додано файл text_ignore.txt, зміненено файл .gitignore"
+   10  touch main_test.txt
+   11  git add .
+   12  git commit -m"створено файл main_test.txt"
+   13  git branch develop
+   14  cd develop
+   15  git checkout develop
+   16  touch develop_test.txt
+   17  git add .
+   18  git commit -"створено нову гілку develop, на гілці develop створено новий файлdevelop_test.txt"
+   19  git commit -m"створено нову гілку develop, на гілці develop створено новий файл develop_test.txt"
+   20  nano develop_test.txt
+   21  git status
+   22  git add .
+   23  git commit -m"додано інформацію у файл develop_test.txt"
+   24  git checkout main
+   25  git merge develop
+   26  git log
+   27   history > command_list.csv
